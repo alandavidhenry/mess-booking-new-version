@@ -1,0 +1,74 @@
+<div class="container my-3">
+    <h1 class="mb-4">Register</h1>
+    <p>Please fill in the form below to register, or <a href="login" class="link-dark">login here</a> if you already have an account.</p>
+
+    <form action="/register" method="POST" class="container-fluid my-5"> 
+        <div class="row mb-3">
+            <label for="serviceNumber" class="col-form-label col-md-3">Service number</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="serviceNumber" name="serviceNumber" placeholder="30123456">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="rank" class="col-form-label col-md-3">Rank</label>
+            <div class="col-md-2">
+                <select class="form-select" id="rank" name="rank" aria-label="Select your rank">
+                    <option selected>Rank</option>
+                    <option value="1">LSgt</option>
+                    <option value="2">Sgt</option>
+                    <option value="3">CSgt</option>
+                    <option value="3">WO2</option>
+                    <option value="3">WO1</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="firstName" class="col-form-label col-md-3">First name</label>
+            <div class="col-md-5">
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="lastName" class="col-form-label col-md-3">Last name</label>
+            <div class="col-md-5">
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="unit" class="col-form-label col-md-3">Unit</label>
+            <div class="col-md-5">
+                <input type="text" class="form-control" id="unit" name="unit" placeholder="Unit">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="contactNumber" class="col-form-label col-md-3">Contact number</label>
+            <div class="col-md-5">
+                <input type="tel" class="form-control" id="contactNumber" name="contactNumber" placeholder="Contact number">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="email" class="col-form-label col-md-3">Email address</label>
+            <div class="col-md-5">
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@email.com">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="password" class="col-form-label col-md-3">Password</label>
+            <div class="col-md-5">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password">
+            </div>
+        </div>
+        <!-- <div class="row mb-3">
+            <label for="passwordConfirmation" class="col-form-label col-md-3">Confirm password</label>
+            <div class="col-md-5">
+                <input type="password" class="form-control" id="passwordConfirmation" name="passwordConfirmation" placeholder="Comfirm password">
+            </div>
+        </div> -->
+        <div class="row mt-4">
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+                <button class="btn btn-primary px-5" type="submit">Register</button>
+            </div>
+        </div>
+    </form>
+</div>

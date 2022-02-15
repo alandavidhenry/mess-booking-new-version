@@ -1,0 +1,29 @@
+<%- include('partials/head') %> 
+<body>
+    <%- include('partials/nav-bar') %> 
+
+    <div class="container my-3">
+        <h1 class="mb-4">Book a room</h1>
+        <p>Please <a href="login" class="link-dark">login here</a> to book a room, or <a href="register" class="link-dark">register</a> if you do not already have an account.</p>
+
+
+        <%- include('partials/booking-form') %>
+
+
+
+    </div>
+
+    <%- include('partials/modal') %> 
+
+    <script>
+        $("input[name='radioGuests']").change(function() {
+            $("#collapseGuests").toggle();
+        });
+        
+        $("input[name='radioPOCDetails']").change(function() {
+            $("#collapsePOCDetails").toggle();
+        });
+    </script>
+
+</body>
+</html>

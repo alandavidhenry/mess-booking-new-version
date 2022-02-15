@@ -1,0 +1,183 @@
+<p>Please fill in the form below to book a room:</p>
+<form class="container-fluid mt-5">
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>Guests</h3>
+            <div class="mb-3">
+                <p>Will you be bringing guests?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioGuests" id="radioGuests1" value="1" checked>
+                    <label class="form-check-label" for="radioGuests1">
+                        No
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioGuests" id="radioGuests2" value="2">
+                    <label class="form-check-label" for="radioGuests2">
+                        Yes
+                    </label>
+                </div>
+            </div>
+            <!-- Hidden if no guests selected -->
+            <div id="collapseGuests">
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <label for="inputGuestTitle1" class="form-label">Guest title</label>
+                        <input type="text" class="form-control" id="inputGuestTitle1" aria-describedby="First guest title" placeholder="Title">
+                    </div>
+                    <div class="col-sm-9">
+                        <label for="inputGuestName1" class="form-label">Guest name</label>
+                        <input type="text" class="form-control" id="inputGuestName1" aria-describedby="First guest name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    Members are reminded that they must host their guest at all times and there is a £10.00 cleaning and maintenance bill per stay.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="mb-3">
+                    <p>What kind of room will you require?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioRoomType" id="radioRoomType1" checked>
+                        <label class="form-check-label" for="radioRoomType1">
+                            Single bunk
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioRoomType" id="radioRoomType2">
+                        <label class="form-check-label" for="radioRoomType2">
+                            Family room
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>Details about your stay</h3>
+            <div class="mb-3">
+                <label for="inputReasonForStay" class="form-label">Reason for stay</label>
+                <input type="text" class="form-control" id="inputReasonForStay" aria-describedby="Reason for stay" placeholder="Reason for stay">
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-6">
+                    <label class="form-label" for="arrivalDate">Arrival date</label>
+                    <input class="form-control" id="arrivalDate" name="date" placeholder="DD/MM/YYY" type="text">
+                </div>
+                <div class="col-sm-6">
+                    <label class="form-label" for="inputArrivalTime">Arrival time</label>
+                    <input type="text" class="form-control" id="inputArrivalTime" aria-describedby="Arrival time" placeholder="00:00">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-6">
+                    <label class="form-label" for="departureDate">Departure date</label>
+                    <input class="form-control" id="departureDate" name="date" placeholder="DD/MM/YYY" type="text">
+                </div>
+                <div class="col-sm-6">
+                    <label class="form-label" for="inputDepartureTime">Departure time</label>
+                    <input type="text" class="form-control" id="inputDepartureTime" aria-describedby="Departure time" placeholder="00:00">
+                </div>
+            </div>
+            <div class="mb-3">
+                <p>Will you require bedding?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioBeddingRequired" id="radioBeddingRequired1" checked>
+                    <label class="form-check-label" for="radioBeddingRequired1">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioBeddingRequired" id="radioBeddingRequired2">
+                    <label class="form-check-label" for="radioBeddingRequired2">
+                        No
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3>Point of contact details</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioPOCDetails" id="radioPOCDetails1" value="1" checked>
+                <label class="form-check-label" for="radioPOCDetails1">
+                    Same as above
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioPOCDetails" id="radioPOCDetails2" value="2">
+                <label class="form-check-label" for="radioPOCDetails2">
+                    Different to above
+                </label>
+            </div>
+
+            <!-- Hidden if "Same as above" selected -->
+            <div id="collapsePOCDetails">
+                <div class="mb-3">
+                    <label for="inputServiceNumber" class="form-label">Service number</label>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="inputServiceNumber" placeholder="30123456">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-2">
+                        <label for="selectRank" class="form-label">Rank</label>
+                            <select class="form-select" id="selectRank" aria-label="Select your rank">
+                                <option selected>Rank</option>
+                                <option value="1">LSgt</option>
+                                <option value="2">Sgt</option>
+                                <option value="3">CSgt</option>
+                                <option value="3">WO2</option>
+                                <option value="3">WO1</option>
+                            </select>
+                    </div>
+                    <div class="col-sm-5">
+                        <label for="inputFirstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+                    </div>
+                    <div class="col-sm-5">
+                        <label for="inputLastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputUnit" class="form-label">Unit</label>
+                    <input type="text" class="form-control" id="inputUnit" placeholder="Unit">
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-4">
+                        <label for="inputContactNumber" class="form-label">Contact number</label>
+                        <input type="tel" class="form-control" id="inputContactNumber" placeholder="00000000000">
+                    </div>
+                    <div class="col-sm-8">
+                        <label for="inputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="name@email.com">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="collapse show" id="collapseRules">
+        <div class="alert alert-warning">
+            <ol>
+                <li>Please note, that due to the high turnover in accommodation, rooms will not be available until 
+                    15:00 hrs on day of arrival, and must be vacated by 10:00 hrs on day of departure. If keys are 
+                    not returned on time, the member who has booked the accommodation will be billed for a new lock. 
+                    Damages will follow the same process. NO EXCEPTIONS.</li>
+                <li>One booking request per room. NO EXCEPTIONS. Requests will not be actioned that ask for multiple rooms.</li>
+                <li>Requests for accommodation can ONLY be made by email.</li>
+                <li>Confirmation is by e.mail only, within 2-3 working days.</li>
+                <li>If you book a room and do not collect your key without good reason, you will be declined from booking accommodation in the future.</li>
+                <li>Please ensure that you have read the <a class="link-dark" data-bs-toggle="modal" href="#rulesModal">Sgts mess rules</a>before arrival and more importantly, your guests do.</li>
+                <li>All bookings will be confirmed via return email within 2-3 working days.</li>
+            </ol>	
+        </div>
+    </div>
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="checkRules" data-bs-toggle="collapse" 
+                data-bs-target="#collapseRules" aria-expanded="true" aria-controls="collapseRules">
+        <label class="form-check-label" for="checkRules">I have read and agree to the rules.</label>
+    </div>
+    <button type="submit" class="btn btn-primary col-sm-3 mb-5">Book</button>
+</form>

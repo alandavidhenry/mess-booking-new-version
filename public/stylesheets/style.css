@@ -1,8 +1,44 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+a.link-light {
+  color: white;
+  font-weight: 700;
+}
+
+a:hover.link-light {
+  color: white;
+  background-color: black;
+}
+a.link-dark {
+  color: black;
+  font-weight: 700;
+}
+
+a:hover.link-dark {
+  color: white;
+  background-color: black;
+}
+
+#hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/images/Wellington-Barracks-1600x1067.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+#hero-title {
+  font-weight: 500;
+}
+
+#collapseRules li {
+  margin-bottom: 0.7rem;
+}
+
+#collapseGuests, #collapsePOCDetails {
+display: none;
+}
+
+.link-button {
+  background: none;
+  border: none;
 }

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand pe-4" href="/">
+            <img src="/images/londist_200.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            LCG Mess Booking
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <a class="nav-link active" aria-current="page" href="book-room">Book a room</a>
+                <a class="nav-link" href="book-meal">Book a meal</a>
+                <a class="nav-link" href="bookings">Bookings table</a>
+            </ul>
+            <ul class="navbar-nav">   
+                <a class="nav-link ms-lg-auto" href="login">Login</a>
+                <form action="/logout" method="POST">
+                    <button type="submit" class="link-button nav-link ms-lg-auto">
+                        Logout
+                    </button>
+                </form>
+                <a class="nav-link ms-lg-auto" href="register">Register</a>
+            </ul>
+        </div>
+    </div>
+</nav>
